@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>SAPUI5 Walkthrough</title>
+		<script
+			id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-modules="sap.m.library"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async" >
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				new sap.m.Text({
+					text : "SAPUI5 is loaded successfully!"
+				}).placeAt("content");
+			});
+            function doStuff() {
+        var ethanRoast = ["Your jokes are cringe","You can stop using apostrophe's like this now","How many Ethans does it take to change a lightbulb? One, but he has to ask Jonah to do it for him."];
+        var selection = prompt("enter a number between 1 and 3. And no decimals.");
+        switch(true){
+            case selection = 1:
+            console.log(ethanRoast[0])
+            break;
+            case selection = 2:
+                console.log(ethanRoast[1]);
+                break;
+            case selection = 3:
+                console.log(ethanRoast[2]);
+    } 
+        
+        }
+		</script>
+  
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
